@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background : #FFFF;
+    color: red;
+    text-align: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    margin-left: 30px;
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 25px;
+    color: red;
+    font-weight: 500;
+    margin-left : 35px;
+
+}
+
+.navbar a:hover, navbar a:active{
+    color: red;   
+}
+
+
+.clown-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.clown img {
+    position: absolute;
+    top: -50px;
+    width: 250px;
+    height: 250px;
+    animation: dropClown 4s infinite ease-in-out; 
+}
+
+@keyframes dropClown {
+    0% {
+        top: -50px; 
+        opacity: 1;
+    }
+    100% {
+        top: 100vh; 
+        opacity: 0; 
+    }
+}
+
+.bg-container{
+    width:60%;
+    height: 500px;
+    background-color: transparent;
+    position: fixed;
+    top: 150px;
+    left: 300px ;
+}
+
+
+.clown:nth-child(1) img {
+    left: 10%; 
+    animation-delay: 0s;
+}
+
+.clown:nth-child(2) img {
+    left: 30%; 
+    animation-delay: 1s;
+}
+
+.clown:nth-child(3) img {
+    left: 50%; 
+    animation-delay: 0.5s;
+}
+
+.clown:nth-child(4) img {
+    left: 70%; 
+    animation-delay: 1.5s;
+}
+
+.deadly-text {
+    font-family: 'Impact', sans-serif; /* Bold, impactful font */
+    font-size: 3em; /* Large size for emphasis */
+    color: #8B0000; /* Dark red color */
+    text-transform: uppercase; /* Uppercase letters for intensity */
+    letter-spacing: 5px; /* Wider spacing for effect */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); /* Strong shadow for depth */
+}
+
+.deadly-button {
+    display: inline-block; /* Makes the anchor behave like a button */
+    padding: 15px 30px; /* Padding for the button */
+    font-size: 1.5em; /* Font size */
+    color: #fff; /* White text */
+    background-color: #c00; /* Bright red background */
+    border: 2px solid #8B0000; /* Dark red border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
